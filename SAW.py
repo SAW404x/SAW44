@@ -54,10 +54,10 @@ bulan_ttl = {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "0
 def logo():
 	os.system("clear")
 	print("""\x1b[0;32m \x1b[0;33m╔═══════════════════════════════════════════
-\x1b[4;33m║#OWNER    : @SAWx404
-\x1b[3;33m║#CHANEL: NAME [ @team_404  ]  
-\x1b[2;33m]         TB: free mod bakar bena [SAW]
- \x1b[0;33m╚═══════════════════════════════════════════╝""")
+\x1b[4;34m║                    : @SAWx404
+\x1b[3;31m║             : NAME [ @team_404  ]  
+\x1b[2;32m]                               [SAW]
+ \x1b[0;34m╚═══════════════════════════════════════════╝""")
 def login():
 	os.system("clear")
 	try:
