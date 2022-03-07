@@ -1,5 +1,5 @@
-# -*- coding: utf-8
-# author by Mark Cornel
+# SAWx404
+# HACKER team 404
 import os
 try:
 	import requests
