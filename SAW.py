@@ -66,7 +66,7 @@ def login():
 	except requests.exceptions.ConnectionError:
 		exit("Internet Connection Error")
 	try:
-		token = open("SAW.txt", "r")
+		token = open("login.txt", "r")
 		menu()
 	except KeyError, IOError:
 		token = raw_input("[?] Enter Token : ")
@@ -86,14 +86,14 @@ def menu():
 	os.system("clear")
 	global token
 	try:
-		token = open("SAW.txt","r").read()
+		token = open("login.txt","r").read()
 	except KeyError:
 		os.system("rm -f login.txt")
 		exit("[?] Login Error")
 	try:
 		nama = requests.get("https://graph.facebook.com/me/?access_token="+token).json()["name"].lower()
 	except IOError:
-		os.system("rm -f SAW.txt")
+		os.system("rm -f login.txt")
 		exit("\033[1;96m[\033[1;93m+\033[1;96m] Token Error")
 	except requests.exceptions.ConnectionError:
 		exit(" ! no internet connection")
