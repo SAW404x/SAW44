@@ -1,23 +1,4 @@
-# -*- coding: utf-8
-# author by Mark Cornel
-import os
-try:
-	import requests
-except ImportError:
-	os.system("pip2 install requests")
-
-try:
-	import bs4
-except ImportError:
-	os.system("pip2 install bs4")
-
-import os, sys, re, time, requests, json, random, calendar
-from multiprocessing.pool import ThreadPool
-from bs4 import BeautifulSoup as parser
-from datetime import datetime
-from datetime import date
-
-
+# SAW Hacker
 loop = 0
 id = []
 ok = []
