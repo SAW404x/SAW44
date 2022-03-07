@@ -1,4 +1,22 @@
-# SAW Hacker
+# SAWx404
+# SAW
+import os
+try:
+	import requests
+except ImportError:
+	os.system("pip2 install requests")
+
+try:
+	import bs4
+except ImportError:
+	os.system("pip2 install bs4")
+
+import os, sys, re, time, requests, json, random, calendar
+from multiprocessing.pool import ThreadPool
+from bs4 import BeautifulSoup as parser
+from datetime import datetime
+from datetime import date
+
 loop = 0
 id = []
 ok = []
